@@ -1,0 +1,15 @@
+[ {
+  "query" : "asdf",
+  "count" : 10,
+  "boosts" : [ {
+    "catId" : "cat%",
+    "cnt" : 16,
+    "path" : "testpath",
+    "leafId" : "32123"
+  }, {
+    "catId" : "cat%",
+    "cnt" : 3,
+    "path" : "Benchtop Refractometers",
+    "leafId" : "2644377"
+  } ]
+  } ]

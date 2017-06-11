@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "jsonValidate.json#",
+  "title": "Query",
+  "description": "Web Service Web Query",
+  "type": "object",
+  "properties": {
+    "query": {
+      "description": "Query completed by user:  Can not be null and must be distinct",
+      "type": [
+        "string"
+      ],
+      "minLength": 1,
+      "distinct": true,
+      "required": [
+        "query"
+      ]
+    },
+    "boosts": {
+      "type": "array",
+      "items": {
+        "title": "Boosts",
+        "description": "Boosts Array schema",
+        "type": "object",
+        "properties": {
+          "catId": {
+            "type": [
+              "string"
+            ]
+          },
+          "cnt": {
+            "type": "integer"
+          },
+          "path": {
+            "type": "string",
+             "minLength": 1
+          },
+          "leafId": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "catId",
+          "path",
+          "leafId"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}
