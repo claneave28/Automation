@@ -1,8 +1,6 @@
 #!/usr/bin/env python2.7
 
 # Carl Laneave
-# Thermofisher Scientific
-# Created 12/19
 # A program using the jsonschema Python library.
 # Uses it to validate some JSON data.
 # Follows the Unix convention of writing normal output to the standard
